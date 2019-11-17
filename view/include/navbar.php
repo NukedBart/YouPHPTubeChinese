@@ -10,7 +10,7 @@ require_once $global['systemRootPath'] . 'objects/user.php';
 require_once $global['systemRootPath'] . 'objects/category.php';
 $_GET['parentsOnly'] = "1";
 if (empty($_SESSION['language'])) {
-    $lang = 'us';
+    $lang = 'en';
 } else {
     $lang = $_SESSION['language'];
 }
@@ -346,9 +346,9 @@ if (((empty($advancedCustomUser->userMustBeLoggedIn) && empty($advancedCustom->d
                                 //$value = strtoupper($value);
                                 $objFlag->$value = $value;
                             }
-                            if ($lang == 'en') {
-                                $lang = 'us';
-                            }
+                            //if ($lang == 'en') {
+                            //    $lang = 'us';
+                            //}
                             ?>
                             <style>
                                 #navBarFlag .dropdown-menu {

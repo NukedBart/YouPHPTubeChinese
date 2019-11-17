@@ -133,9 +133,9 @@ class Configuration {
     }
 
     function getLanguage() {
-        if ($this->language == "en") {
-            return "us";
-        }
+        //if ($this->language == "en") {
+        //    return "us";
+        //}
         return $this->language;
     }
 

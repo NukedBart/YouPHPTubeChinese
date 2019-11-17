@@ -53,7 +53,7 @@ class User_Location extends PluginAbstract {
                 if(file_exists($file)){
                     include_once $file;
                 }else{
-                    $_SESSION['language'] = 'us';
+                    $_SESSION['language'] = 'en';
                 }
             }
         }

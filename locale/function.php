@@ -71,7 +71,7 @@ function getEnabledLangs() {
     $dir = "{$global['systemRootPath']}locale";
     $flags = array();
     if (empty($global['dont_show_us_flag'])) {
-        $flags[] = 'us';
+        $flags[] = 'en';
     }
     if ($handle = opendir($dir)) {
         while (false !== ($entry = readdir($handle))) {
