@@ -1,3 +1,4 @@
+<script src="<?php echo $global['webSiteRootURL']; ?>view/js/video.js/lang/<?php echo $config->getLanguage(); ?>.js" type="text/javascript"></script>
 <footer>
     <?php
     $custom = "";
