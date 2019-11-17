@@ -196,6 +196,18 @@
     background-position: -208px -22px
 }
 
+.flagstrap-icon.flagstrap-en {
+    background-position: -144px -154px
+}
+
+.flagstrap-icon.flagstrap-zh-cn {
+    background-position: -208px -22px
+}
+
+.flagstrap-icon.flagstrap-zh-tw {
+    background-position: -64px -154px
+}
+
 .flagstrap-icon.flagstrap-co {
     background-position: -224px -22px
 }
