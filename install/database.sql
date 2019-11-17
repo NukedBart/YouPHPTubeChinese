@@ -213,7 +213,7 @@ CREATE TABLE IF NOT EXISTS `configurations` (
   `users_id` INT NOT NULL,
   `version` VARCHAR(10) NOT NULL,
   `webSiteTitle` VARCHAR(45) NOT NULL DEFAULT 'YouPHPTube',
-  `language` VARCHAR(6) NOT NULL DEFAULT 'en',
+  `language` VARCHAR(6) NOT NULL DEFAULT 'zh-CN',
   `contactEmail` VARCHAR(45) NOT NULL,
   `modified` DATETIME NOT NULL,
   `created` DATETIME NOT NULL,
