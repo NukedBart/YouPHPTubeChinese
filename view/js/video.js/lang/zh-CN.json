@@ -80,5 +80,8 @@
   "Done": "完成",
   "Caption Settings Dialog": "字幕设定视窗",
   "Beginning of dialog window. Escape will cancel and close the window.": "开始对话视窗。离开会取消及关闭视窗",
-  "End of dialog window.": "结束对话视窗"
+  "End of dialog window.": "结束对话视窗",
+  "Theater": "剧场模式",
+  "Auto": "自动",
+  "Quality": "画质"
 }
