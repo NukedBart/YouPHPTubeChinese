@@ -2366,7 +2366,7 @@ if (!class_exists('Video')) {
                     if (!empty($advancedCustom->useFFMPEGToGenerateThumbs)) {
                         im_resizeV3($jpegPortraitSource['path'], $jpegPortraitThumbsSmall['path'], 170, 250);
                     } else {
-                        im_resizeV2($jpegPortraitSource['path'], $jpegPortraitThumbsSmall['path'], 170, 250, 5);
+                        im_resizeV2($jpegPortraitSource['path'], $jpegPortraitThumbsSmall['path'], 170, 250, 60);
                     }
                 }
             } else {
@@ -2406,7 +2406,7 @@ if (!class_exists('Video')) {
                     if (!empty($advancedCustom->useFFMPEGToGenerateThumbs)) {
                         im_resizeV3($jpegSource['path'], $thumbsSmallSource['path'], 250, 140);
                     } else {
-                        im_resizeV2($jpegSource['path'], $thumbsSmallSource['path'], 250, 140, 5);
+                        im_resizeV2($jpegSource['path'], $thumbsSmallSource['path'], 250, 140, 60);
                     }
                 }
             } else {
