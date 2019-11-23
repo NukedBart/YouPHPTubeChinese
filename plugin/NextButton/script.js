@@ -10,7 +10,7 @@ var nextButton = videojs.extend(Button, {
         //this.addClass('vjs-chapters-button');
         this.addClass('next-button');
         this.addClass('vjs-button-fa-size');
-        this.controlText("Next");
+        this.controlText(player.localize('Next'));
     },
     handleClick: function () {
         document.location = autoPlayVideoURL;

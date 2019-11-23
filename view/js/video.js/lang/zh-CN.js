@@ -82,5 +82,6 @@ videojs.addLanguage('zh-CN', {
   "End of dialog window.": "结束对话视窗",
   "Theater": "剧场模式",
   "Auto": "自动",
-  "Quality": "画质"
+  "Quality": "画质",
+  "Next": "下一个"
 });
