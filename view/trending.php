@@ -203,15 +203,15 @@ unset($_POST['sort']);
             <div class="infinite-scroll-request loader-ellips text-center">
                 <img src="img/loading.gif" alt=""/>
             </div>
-            <p class="infinite-scroll-last text-center text-muted">End of content</p>
-            <p class="infinite-scroll-error text-center text-muted">No more pages to load</p>
+            <p class="infinite-scroll-last text-center text-muted">没有更多视频了</p>
+            <p class="infinite-scroll-error text-center text-muted">没有更多页了</p>
         </div>
         <?php
         if ($_POST['current'] + 1 <= $pages) {
             ?>
             <!-- pagination has path -->
             <p class="pagination hidden">
-                <a class="pagination__next" href="<?php echo $global['webSiteRootURL']; ?>trending?current=<?php echo $_POST['current'] + 1; ?>">Next page</a>
+                <a class="pagination__next" href="<?php echo $global['webSiteRootURL']; ?>trending?current=<?php echo $_POST['current'] + 1; ?>">下一页</a>
             </p>
             <?php
         }
