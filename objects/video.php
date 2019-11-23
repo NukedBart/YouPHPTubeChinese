@@ -2395,18 +2395,18 @@ if (!class_exists('Video')) {
                 if (!file_exists($thumbsSource['path']) && filesize($jpegSource['path']) > 1024) {
                     error_log("Resize JPG {$jpegSource['path']}, {$thumbsSource['path']}");
                     if (!empty($advancedCustom->useFFMPEGToGenerateThumbs)) {
-                        im_resizeV3($jpegSource['path'], $thumbsSource['path'], 250, 140);
+                        im_resizeV3($jpegSource['path'], $thumbsSource['path'], 640, 360);
                     } else {
-                        im_resizeV2($jpegSource['path'], $thumbsSource['path'], 250, 140);
+                        im_resizeV2($jpegSource['path'], $thumbsSource['path'], 640, 360);
                     }
                 }
 // create thumbs
                 if (!file_exists($thumbsSmallSource['path']) && filesize($jpegSource['path']) > 1024) {
                     error_log("Resize Small JPG {$jpegSource['path']}, {$thumbsSmallSource['path']}");
                     if (!empty($advancedCustom->useFFMPEGToGenerateThumbs)) {
-                        im_resizeV3($jpegSource['path'], $thumbsSmallSource['path'], 250, 140);
+                        im_resizeV3($jpegSource['path'], $thumbsSmallSource['path'], 640, 360);
                     } else {
-                        im_resizeV2($jpegSource['path'], $thumbsSmallSource['path'], 250, 140, 60);
+                        im_resizeV2($jpegSource['path'], $thumbsSmallSource['path'], 640, 360);
                     }
                 }
             } else {
