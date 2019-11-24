@@ -512,6 +512,18 @@ if (!class_exists('Video')) {
             $this->status = $status;
         }
 
+        //仅限youPHPTubeEncoderNotifyIsDone.json.php调用 将视频创建时间修改为视频上传完成时间
+        function setCreated() {
+            if (!empty($this->id)) {
+                global $global;
+                $sql = "UPDATE videos SET created = now() WHERE id = {$this->id} ";
+                $res = sqlDAL::writeSql($sql);
+                if ($global['mysqli']->errno != 0) {
+                    die('Error on update Created: (' . $global['mysqli']->errno . ') ' . $global['mysqli']->error);
+                }
+            }
+        }
+
         function setType($type) {
             $this->type = $type;
         }

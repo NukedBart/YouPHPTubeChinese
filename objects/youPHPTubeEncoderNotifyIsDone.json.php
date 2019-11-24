@@ -53,6 +53,7 @@ if(empty($_POST['fail'])){
 }else{
     $video->setStatus('i');
 }
+$video->setCreated();
 $video_id = $video->save();
 if(empty($_POST['fail'])){
     YouPHPTubePlugin::afterNewVideo($_POST['videos_id']);
